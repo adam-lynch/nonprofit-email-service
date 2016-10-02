@@ -6,6 +6,7 @@ import Settings from './containers/Settings';
 import Home from './containers/Home';
 import ImportSubscribers from './containers/ImportSubscribers';
 import AddEmail from './containers/AddEmail';
+import TemplateNew from './containers/TemplateNew';
 import NotFound from './components/404';
 
 export default (
@@ -13,6 +14,9 @@ export default (
     <IndexRoute component={Home} />
 
     <Route path="campaigns">
+      <Route path="templates">
+        <Route path="new" component={TemplateNew}/>
+      </Route>
     </Route>
 
     <Route path="lists">

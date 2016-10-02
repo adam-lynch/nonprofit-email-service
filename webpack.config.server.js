@@ -73,6 +73,7 @@ export default {
   ],
   module: {
     loaders: [
+      {test: /\.json$/, loader: 'json'}, 
       {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'},
       {test: /\.eot(\?v=\d+.\d+.\d+)?$/, loader: 'url?name=[name].[ext]'},
       {test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url?limit=10000&mimetype=application/font-woff&name=[name].[ext]"},
